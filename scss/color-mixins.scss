@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Montserrat Bold";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../fonts/Montserrat-Light.woff2") format("woff2"),
+    url("../fonts/Montserrat-Light.woff") format("woff"),
+    url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ************ FONT *********** */
+$fontMontserrat-Bold: "Montserrat Bold", sans-serif;
+$fontMontserrat-Medium: "Montserrat Medium", sans-serif;
+$fontMontserrat-Regular: "Montserrat Regular", sans-serif;
+$fontMontserrat-Light: "Montserrat ", sans-serif;
+
+/* *********** Font mixins ********** */
+@mixin fontMontserratBold($size, $lineHeight) {
+  font-family: $fontMontserrat-Bold;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 700;
+}
+@mixin fontMontserratMedium($size, $lineHeight) {
+  font-family: $fontMontserrat-Medium;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 500;
+}
+@mixin fontMontserratRegular($size, $lineHeight) {
+  font-family: $fontMontserrat-Regular;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin fontMontserratLight($size, $lineHeight) {
+  font-family: $fontMontserrat-Light;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 300;
+}
+/* ********** Color ********* */
+$colorRed: #ed1b24;
+$colorBlack: #1a1f15;
+$colorWhite: #f5f6f8;
+$colorYellow: #ffb800;
+$colorBGBlueLight: #e6f5fd;
+$colorGreen: #026d00;
+
+/* ********* mixin ************* */
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin font($fontFamily, $size, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
