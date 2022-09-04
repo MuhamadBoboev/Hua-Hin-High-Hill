@@ -28,18 +28,18 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  // overflow: hidden;
+  overflow: hidden;
   // max-width: 1400px;
   margin: 0 auto;
   flex: 0 1;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 .page {
-  max-width: 1400px;
-  margin: 0 auto;
 }
 ._container {
   max-width: 1160px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   margin: 0 auto;
 }
 .display-none {

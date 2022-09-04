@@ -11,6 +11,7 @@ burger.addEventListener("click", function () {
   let menuBlack = document.querySelector(".main-block_container");
   menuBlack.classList.toggle("main-block__active");
 
+  document.querySelector(".main-block_container").classList.toggle("active");
   mainNav.classList.toggle("active");
   burger.classList.toggle("active");
   body.classList.toggle("lock");
